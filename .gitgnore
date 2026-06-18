@@ -1,0 +1,25 @@
+# Binário compilado
+mercadinho
+mercadinho.exe
+*.o
+*.out
+ 
+# Configuração local (caminho do diretório de dados de cada usuário)
+mercadinho.cfg
+ 
+# Dados gerados em tempo de execução
+data/*.dat
+data/*.txt
+*.dat
+log_diario.txt
+snapshot_*.txt
+snapshot_*.dat
+clientes_export.txt
+produtos_export.txt
+pedidos_export.txt
+ficha_cli_*.txt
+ficha_prod_*.txt
+ 
+# Manter a pasta data/ versionada vazia
+!data/.gitkeep
+ 
