@@ -10,6 +10,10 @@
 #include "produtos/produtos.h"
 #include "pedidos/pedidos.h"
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 void menu_principal(void) {
     int escolha;
     do {
@@ -52,7 +56,8 @@ void menu_principal(void) {
 
 int main(void) {
 #ifdef _WIN32
-    setlocale(LC_ALL, "Portuguese");
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
 #else
     setlocale(LC_ALL, "pt_BR.UTF-8");
 #endif
