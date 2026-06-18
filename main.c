@@ -51,7 +51,11 @@ void menu_principal(void) {
 }
 
 int main(void) {
+#ifdef _WIN32
     setlocale(LC_ALL, "Portuguese");
+#else
+    setlocale(LC_ALL, "pt_BR.UTF-8");
+#endif
 
     config_inicializar();
     log_evento("SISTEMA", "INICIO", "Sistema iniciado");
