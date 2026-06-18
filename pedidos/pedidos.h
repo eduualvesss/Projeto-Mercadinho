@@ -4,7 +4,7 @@
 #ifndef PEDIDOS_H
 #define PEDIDOS_H
 
-#include "comum.h"
+#include "../comum/comum.h"
 
 int  ped_proximo_numero(void);
 void imprimir_cupom(const Pedido *ped);

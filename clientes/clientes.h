@@ -4,7 +4,7 @@
 #ifndef CLIENTES_H
 #define CLIENTES_H
 
-#include "comum.h"
+#include "../comum/comum.h"
 
 int  cli_proximo_codigo(void);
 int  cli_total_registros(void);

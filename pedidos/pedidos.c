@@ -2,8 +2,8 @@
  *  pedidos.c — Módulo de vendas (Ponto de Venda)
  * ============================================================ */
 #include "pedidos.h"
-#include "clientes.h"
-#include "produtos.h"
+#include "../clientes/clientes.h"
+#include "../produtos/produtos.h"
 #include <stdlib.h>
 #include <string.h>
 

@@ -4,11 +4,11 @@
  *  Módulos: Cliente | Produto/Estoque | Pedido (PDV)
  * ============================================================
  */
-#include "comum.h"
-#include "clientes.h"
-#include "produtos.h"
-#include "pedidos.h"
 #include <locale.h>
+#include "comum/comum.h"
+#include "clientes/clientes.h"
+#include "produtos/produtos.h"
+#include "pedidos/pedidos.h"
 
 void menu_principal(void) {
     int escolha;
@@ -17,7 +17,7 @@ void menu_principal(void) {
         printf("\n ╔══════════════════════════════════════════╗\n");
         printf(" ║                                          ║\n");
         printf(" ║       MERCADINHO DO PORTO                ║\n");
-        printf(" ║         Sistema v%-5s                   ║\n", VERSAO);
+        printf(" ║         Sistema v1.0                    ║\n");
         printf(" ║                                          ║\n");
         printf(" ╠══════════════════════════════════════════╣\n");
         printf(" ║ [1] PONTO DE VENDA                       ║\n");

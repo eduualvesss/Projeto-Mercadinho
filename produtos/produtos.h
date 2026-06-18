@@ -4,7 +4,7 @@
 #ifndef PRODUTOS_H
 #define PRODUTOS_H
 
-#include "comum.h"
+#include "../comum/comum.h"
 
 void prod_classificar(Produto *p);
 const char *prod_label(int prioridade);
