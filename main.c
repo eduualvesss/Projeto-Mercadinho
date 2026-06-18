@@ -21,7 +21,7 @@ void menu_principal(void) {
         printf("\n ╔══════════════════════════════════════════╗\n");
         printf(" ║                                          ║\n");
         printf(" ║       MERCADINHO DO PORTO                ║\n");
-        printf(" ║         Sistema v1.0                    ║\n");
+        printf(" ║         Sistema v1.0                     ║\n");
         printf(" ║                                          ║\n");
         printf(" ╠══════════════════════════════════════════╣\n");
         printf(" ║ [1] PONTO DE VENDA                       ║\n");
