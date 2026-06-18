@@ -39,6 +39,7 @@ SISTEMA-MERCADINHO/
 ## 🔧 Como compilar
 
 ```bash
+cd Projeto-Mercadinho
 CTRL + SHIFT + B no VSCode
 ```
 
