@@ -39,7 +39,7 @@ SISTEMA-MERCADINHO/
 ## 🔧 Como compilar
 
 ```bash
-gcc -Wall -Wextra -o mercadinho main.c clientes.c produtos.c pedidos.c comum.c
+CTRL + SHIFT + B no VSCode
 ```
 
 ## ▶️ Como executar
