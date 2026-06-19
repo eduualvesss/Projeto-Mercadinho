@@ -1,0 +1,24 @@
+Os sistemas adotam abordagens distintas para salvamento de dados em disco, demonstrando flexibilidade no tratamento de arquivos persistentes:
+
+Persistência Sequencial Formatada (.TXT):
+
+O módulo de estoque utiliza a escrita formatada por meio da função fprintf, separando cada atributo por vírgulas, gerando um arquivo de texto plano estruturado no padrão universal CSV (Comma-Separated Values).
+Esta técnica prioriza a interoperabilidade, permitindo a leitura e manipulação externa dos dados por softwares de terceiros, como editores de texto ou planilhas eletrônicas.
+
+Persistência por Blocos Binários (.DAT):
+
+O módulo de clientes implementa a persistência puramente binária através das funções de baixo nível fwrite e fread.
+Os registros são transferidos diretamente da memória RAM para o arquivo clientes.dat sem conversão textual intermediária.
+Esta metodologia confere alta performance computacional e segurança elementar contra violações externas de dados.
+
+ Algoritmos de Manipulação e Ponteiros:
+
+A manipulação dos dados armazenados envolve lógica estruturada de gerenciamento de coleções e ponteiros de arquivos:
+
+Algoritmo de Exclusão Física por Deslocamento: No gerenciamento de arrays na memória (estoque), a exclusão de um registro exige a eliminação de lacunas de memória.
+Ao localizar o índice do objeto a ser deletado, o sistema executa um laço de repetição que move todos os registros subsequentes uma posição para trás (estoque[j] = estoque[j + 1]),
+reajustando os índices e decrementando o ponteiro do contador geral do sistema.
+
+Algoritmo de Atualização Local (In-place Update): No arquivo binário de clientes, as alterações de dados ocorrem diretamente no arquivo físico de maneira pontual.
+Ao encontrar o registro alvo através de um laço de leitura, o sistema utiliza a função fseek(f, (long)sizeof(Cliente), SEEK_CUR)
+para recuar o ponteiro de gravação exatamente ao início do bloco de bytes daquele cliente específico, sobrescrevendo a estrutura modificada através do comando fwrite.
