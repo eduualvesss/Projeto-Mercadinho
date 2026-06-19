@@ -2,6 +2,8 @@
 
 Sistema de gestão para um pequeno mercado, feito em **C puro**, com módulos separados de **Clientes**, **Produtos/Estoque** e **Pedidos (Ponto de Venda)**.
 
+Slide do Projeto: https://gamma.app/docs/Sistema-Mercadinho-59mtdf032chfck2
+
 ## ✨ Funcionalidades
 
 - **Clientes**: cadastro (PF/PJ), consulta por código/nome/CPF, edição, inativação/exclusão, relatório e exportação em `.txt`.
