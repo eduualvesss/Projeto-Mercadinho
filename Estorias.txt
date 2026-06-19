@@ -1,24 +1,25 @@
-*Estória 1: Evitar falta de mercadoria*
- * *Como* dono do mercadinho,
- * *Eu quero* cadastrar meus produtos com uma quantidade mínima de segurança,
- * *Para que* o sistema me avise quando o estoque estiver acabando e eu saiba a hora exata de comprar mais com os fornecedores.
-*Critérios de Aceitação:*
- * *CA1:* No momento do cadastro do produto, o sistema deve exigir a digitação do campo "Estoque Mínimo de Segurança", aceitando apenas valores maiores ou iguais a zero.
- * *CA2:* Durante a realização de uma venda, se a quantidade atual do produto ficar igual ou menor que o estoque mínimo definido, o sistema deve exibir uma mensagem de alerta na tela (Ex: "Aviso: Estoque baixo para este produto!").
- * *CA3:* Na área de relatórios ou listagem de produtos, deve haver uma opção para visualizar apenas os itens que estão com o estoque abaixo do limite mínimo.
-### *Estória 2: Rapidez no atendimento*
- * *Como* operador de caixa,
- * *Eu quero* apenas digitar o código do produto e a quantidade na hora de registrar uma compra,
- * *Para que* a venda seja rápida e o sistema calcule o valor total sozinho, sem eu precisar fazer contas de cabeça com o cliente esperando.
-*Critérios de Aceitação:*
- * *CA1:* O sistema deve validar instantaneamente se o código do produto digitado existe no arquivo de estoque.
- * *CA2:* Se o código for válido e houver estoque suficiente, o item deve ser adicionado ao carrinho de compras e o subtotal da venda deve ser recalculado e exibido na tela na mesma hora.
- * *CA3:* Se o código digitado não for encontrado, o sistema deve exibir a mensagem "Produto não encontrado" e permitir que o operador digite novamente, sem fechar o carrinho de compras ou travar o programa.
-### *Estória 3: Garantia de dados salvos*
- * *Como* gerente do estabelecimento,
- * *Eu quero* que todas as movimentações do dia sejam gravadas em arquivos no computador,
- * *Para que* eu possa fechar o programa e desligar a máquina no fim do expediente com a certeza de que as informações estarão lá no dia seguinte.
-*Critérios de Aceitação:*
- * *CA1:* Ao finalizar uma venda ou confirmar um novo cadastro, o sistema deve gravar os dados imediatamente no arquivo binário correspondente (.dat), garantindo que nenhuma informação fique apenas na memória volátil (RAM).
- * *CA2:* Ao iniciar o programa, o sistema deve verificar se os arquivos .dat existem e carregar todas as informações salvas automaticamente para o menu de uso.
- * *CA3:* Caso o programa seja encerrado de forma abrupta (fechando a janela do terminal, por exemplo), os dados salvos até a última operação finalizada com sucesso devem permanecer intactos e sem corrupção no arquivo.
+Estória 1: Evitar falta de mercadoria
+
+ Como dono do mercadinho, eu quero cadastrar meus produtos com uma quantidade mínima de segurança, para que o sistema me avise quando o estoque estiver acabando e eu saiba a hora exata de comprar mais com os fornecedores.
+
+Critérios de Aceitação:
+ C.A 1: No momento do cadastro do produto, o sistema deve exigir a digitação do campo "Estoque Mínimo de Segurança", aceitando apenas valores maiores ou iguais a zero.
+ C.A 2: Durante a realização de uma venda, se a quantidade atual do produto ficar igual ou menor que o estoque mínimo definido, o sistema deve exibir uma mensagem de alerta na tela (Ex: "Aviso: Estoque baixo para este produto!").
+ C.A 3: Na área de relatórios ou listagem de produtos, deve haver uma opção para visualizar apenas os itens que estão com o estoque abaixo do limite mínimo.
+
+Estória 2: Rapidez no atendimento
+
+Como operador de caixa, eu quero apenas digitar o código do produto e a quantidade na hora de registrar uma compra, para que a venda seja rápida e o sistema calcule o valor total sozinho, sem eu precisar fazer contas de cabeça com o cliente esperando.
+
+Critérios de Aceitação:
+ C.A 1: O sistema deve validar instantaneamente se o código do produto digitado existe no arquivo de estoque.
+ C.A 2: Se o código for válido e houver estoque suficiente, o item deve ser adicionado ao carrinho de compras e o subtotal da venda deve ser recalculado e exibido na tela na mesma hora.
+ C.A 3: Se o código digitado não for encontrado, o sistema deve exibir a mensagem "Produto não encontrado" e permitir que o operador digite novamente, sem fechar o carrinho de compras ou travar o programa.
+
+Estória 3: Garantia de dados salvos
+ Como gerente do estabelecimento, eu quero que todas as movimentações do dia sejam gravadas em arquivos no computador,para que eu possa fechar o programa e desligar a máquina no fim do expediente com a certeza de que as informações estarão lá no dia seguinte.
+
+Critérios de Aceitação:
+C.A 1: Ao finalizar uma venda ou confirmar um novo cadastro, o sistema deve gravar os dados imediatamente no arquivo binário correspondente (.dat), garantindo que nenhuma informação fique apenas na memória volátil (RAM).
+C.A 2: Ao iniciar o programa, o sistema deve verificar se os arquivos .dat existem e carregar todas as informações salvas automaticamente para o menu de uso.
+C.A 3: Caso o programa seja encerrado de forma abrupta (fechando a janela do terminal, por exemplo), os dados salvos até a última operação finalizada com sucesso devem permanecer intactos e sem corrupção no arquivo.
